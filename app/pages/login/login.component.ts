@@ -1,7 +1,9 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { User } from "../../shared/user/user";
 import { UserService } from "../../shared/user/user.service";
 import { Router } from "@angular/router";
+import { Page } from "ui/page"; 
+
 
 @Component({
   selector: "my-app",
