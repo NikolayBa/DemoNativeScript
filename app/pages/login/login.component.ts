@@ -17,7 +17,7 @@ export class LoginComponent {
 
   constructor(private router: Router, private userService: UserService) {
     this.userche = new User();
-    this.userche.email = "my.test.account@nativescript.org";
+    this.userche.email = "nikolaynikolay";
     this.userche.password = "password";
   }
   
@@ -31,7 +31,7 @@ export class LoginComponent {
   login() {
     this.userService.login(this.userche)
     .subscribe(
-      () => this.router.navigate(["/list"]),
+      () => this.router.navigate(["/mainscreen"]),
       (error) => alert("Unfortunately we could not find your account.")
     );
   }

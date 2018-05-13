@@ -1,10 +1,6 @@
 <StackLayout>
-    <Image src="res://logo_login" stretch="none" horizontalAlignment="center"></Image>
-    <TextField hint="Email Address" keyboardType="email" [(ngModel)]="userche.email"
-      autocorrect="false" autocapitalizationType="none"></TextField>
-    <TextField hint="Password" secure="true" [(ngModel)]="userche.password"></TextField>
-  
-    <Button [text]="isLoggingIn ? 'Sign in' : 'Sign up'" class="submit-button" (tap)="submit()"></Button>
-    <Button [text]="isLoggingIn ? 'Sign up' : 'Back to login'" (tap)="toggleDisplay()"></Button>
+    <StackLayout height="90%">
+      <Button id="ConnectButton" [text]="isConnected ? 'Disconnect' : 'Connect' " (tap)="onButtonTap()"></Button>
+    </StackLayout>
+    <Label height="10%" #BlueToothStatusBar id="BlueToothStatusBar" [text]="isConnected ? 'Connected to Car Device' : 'Not Connected to Car Device'"></Label>
 </StackLayout>
-  

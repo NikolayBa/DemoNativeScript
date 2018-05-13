@@ -1,0 +1,11 @@
+/*custom code */
+#BlueToothStatusBar
+{
+    text-align: center;
+    background-color: red;
+}
+
+#ConnectButton
+{
+    margin-top: 50%;
+}
